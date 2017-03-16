@@ -1,17 +1,17 @@
 /* fonts */
 @font-face{
     font-family: Okomito;
-    src:    url('../Okomito-Medium.eot?#iefix') format('embedded-opentype'),
-            url('../Okomito-Medium.woff') format('woff'),
-            url('../Okomito-Medium.woff2') format('woff2');
+    src:    url('../fonts/Okomito-Medium.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/Okomito-Medium.woff') format('woff'),
+            url('../fonts/Okomito-Medium.woff2') format('woff2');
 }
 @font-face{
     font-family: Monoist;
-    src:    url('../monoist-regular-hdcweb.eot?#iefix') format('embedded-opentype'),
-            url('../monoist-regular-hdcweb.woff') format('woff'),
-            url('../monoist-regular-hdcweb.woff2') format('woff2'), 
-            url('../monoist-regular-hdcweb.ttf')  format('truetype'),
-            url('../monoist-regular-hdcweb.svg#svgFontName') format('svg');
+    src:    url('../fonts/monoist-regular-hdcweb.eot?#iefix') format('embedded-opentype'),
+            url('../fonts/monoist-regular-hdcweb.woff') format('woff'),
+            url('../fonts/monoist-regular-hdcweb.woff2') format('woff2'), 
+            url('../fonts/monoist-regular-hdcweb.ttf')  format('truetype'),
+            url('../fonts/monoist-regular-hdcweb.svg#svgFontName') format('svg');
 }
 
 /* Typography */
@@ -23,8 +23,8 @@ h1, h2, p, li, a{
 }
 h1, strong{
     font-size: 3rem;
-    line-height: 0.9375em;
     font-weight: 500;
+    line-height: 0.9375em;
 }
 h2{
     font-size: 1.5rem;
@@ -54,8 +54,8 @@ header p{
 }
 .quote:before {
     content: '“';
-    position: absolute;
     margin-left: -.45em;
+    position: absolute;
 }
 .quote:after {
     content: '”';
@@ -75,8 +75,8 @@ body{
     background: rgba(255, 69, 0, 0.99);
 }
 .title-bar{
-    padding-top: 0.625rem;
     background-color: #e8e8e8;
+    padding-top: 0.625rem;
 }
 .space{
     margin-bottom: 3.75rem;
@@ -99,11 +99,11 @@ img, .responsive-embed, .accordion-content p, .accordion-content strong{
     background: none;
 }
 .accordion-title{
+    border: none;
+    color: #181818;
+    display: inline-block;
     margin-bottom: 3.75rem;
     padding: 0;
-    color: #181818;
-    border: none;
-    display: inline-block;
 }
 :last-child:not(.is-active) > .accordion-title {
     border: none;
@@ -130,10 +130,10 @@ a:hover, a:active{
     opacity: 1;
 }
 .logo:link, .logo:visited, .casestudy:link, .casestudy:visited{
-    -webkit-transition: 200ms ease-in-out;
-    transition: 200ms ease-in-out;
     color: #181818;
     opacity: 1;
+    -webkit-transition: 200ms ease-in-out;
+    transition: 200ms ease-in-out;
 }
 .logo:hover, .logo:active, .accordion-title:hover, .accordion-title:active{
     color: #ff4500;
@@ -142,8 +142,8 @@ a:hover, a:active{
     background: none;
 }
 .is-active > .accordion-title{
-    margin-bottom: 0.938rem;
     color: #fff;
+    margin-bottom: 0.938rem;
     opacity: 1;
 }
 .is-active > .accordion-title:hover{
