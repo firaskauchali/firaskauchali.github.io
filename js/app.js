@@ -2,6 +2,11 @@
 /*global $, jQuery, alert, Foundation*/
 $(document).foundation();
 
+$('.accordion-item').on('accordion-title').on('click', function () {
+    'use strict';
+    $(this).parent().prepend(this);
+});
+
 $(".accordion-title").click(function () {
     'use strict';
     setTimeout(function () {
@@ -15,7 +20,7 @@ $(".accordion-title").click(function () {
 });
 
 $(window).bind("load", function () {
-    "use strict";
+    'use strict';
     var footer = $(".footer"),
         pos = footer.position(),
         height = $(window).height();
