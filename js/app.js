@@ -6,15 +6,12 @@ $(".accordion-title").click(function () {
     'use strict';
     setTimeout(function () {
         if (Foundation.MediaQuery.atLeast('medium')) {
-            $('html,body').animate({scrollTop: $('.is-active').offset().top - $('header').height()}, 'slow');
+            $('html,body').animate({scrollTop: $('.is-active').offset().top - $('header').height()}, 620);
+            return false;
         } else {
-            $('html,body').animate({scrollTop: $('.is-active').offset().top}, 'slow');
+            $('html,body').animate({scrollTop: $('.is-active').offset().top}, 620);
         }
     }, 310);
-});
-
-$('.close').click(function () {
-	$('.accordion').foundation('up', $('.accordion-content'));
 });
 
 $(window).bind("load", function () {
