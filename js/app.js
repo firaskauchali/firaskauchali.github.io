@@ -2,21 +2,30 @@
 /*global $, jQuery, alert, Foundation*/
 $(document).foundation();
 
-$('.accordion-item').on('accordion-title').on('click', function () {
+$('.accordion-title').on('click', function () {
     'use strict';
-    $(this).parent().prepend(this);
+    $(this).parent().prependTo(".accordion");
 });
+
+/*$('.accordion-title').on('click', function () {
+    'use strict';
+    if ($(this).parent().is('.is-active')) {
+        $(this).parent().prependTo('.accordion');
+    } else {
+        $(this).parent().appendTo('.accordion');
+    }
+});*/
 
 $(".accordion-title").click(function () {
     'use strict';
     setTimeout(function () {
         if (Foundation.MediaQuery.atLeast('medium')) {
-            $('html,body').animate({scrollTop: $('.is-active').offset().top - $('header').height()}, 620);
+            $('html,body').animate({scrollTop: $('.is-active').offset().top - $('header').height()}, 500);
             return false;
         } else {
             $('html,body').animate({scrollTop: $('.is-active').offset().top}, 620);
         }
-    }, 310);
+    }, 0);
 });
 
 $(window).bind("load", function () {
