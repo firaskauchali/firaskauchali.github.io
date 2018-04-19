@@ -1,0 +1,22 @@
+html, body {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
+    background: white;
+}
+div.container{
+    font-size: 3em;
+    color: white;
+    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Helvetica, Arial, sans-serif
+}
+.marquee {
+    overflow: hidden;
+    background: black;
+}
+
+.footer {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
